@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<title>Assignment 4</title>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/css.css">
+  <script src="js/js.js" defer></script>
+  <script src="js/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Assignment 4 - API</h1>
+  </header>
+
+  <main> 
+      <h2 class="name"></h2>
+      <img class="shiny picture">
+      <p>Shiny version</p>
+      <img class="default picture">
+      <p>Original version</p>
+      <div class="pokemon"></div>    
+
+    <div class="form">
+      <form class="user-input">
+        <label for="pokemon-id">Select a number between 1-905.</label><br>
+        <input type="text" id="pokemon-id" name="/"><br>
+        <button class="choose-button" type="button">Generate</button>
+      </form>
+      <button class="random-button" type="button">Get random Pokemon</button>
+    </div>
+    <p class="error-message"></p>
+
+  </main>
+  <footer>
+    <h3>Credit: </h3>
+    <a href="https://pokeapi.co/">PokeApi</a>
+  </footer>
+</body>
+
+</html>
