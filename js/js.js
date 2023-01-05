@@ -9,13 +9,13 @@ $(function () {
     $(".pokemon-info").empty();
 
     fetch(API_URL + userId)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(response.status);
-      } else {
-        return response.json();
-      }
-    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(response.status);
+        } else {
+          return response.json();
+        }
+      })
       .then((data) => {
         console.log(data);
         $(".name").text(data.name.toUpperCase());
@@ -25,7 +25,7 @@ $(function () {
       })
       .catch(error => {
         $(".error-message").text("Something went wrong. " + error + ". You probably choose a non existing number. Try again!")
-    });
+      });
   });
 
 

@@ -2,8 +2,9 @@
   --primary-color: #3B4CCA;
   --secondary-color: #FFDE00;
   --detail-color: #CC0000;
-  --color-extra --base-size: 16px;
+  --base-size: 16px;
   --header-footer-size: 48px;
+  --square-picture: 100px;
 }
 
 
@@ -43,25 +44,30 @@ h1 {
   color: var(--secondary-color);
 }
 
+a,
+h3 {
+  color: #FFDE00;
+}
+
 p {
-  margin-top: 6px;
+  margin-top: calc(var(--base-size) / 2);;
 }
 
 .picture {
   background-color: var(--detail-color);
   border: 1px solid var(--primary-color);
-  margin-top: 6px;
-  width: 96px;
-  height: 96px;
+  height: var(--square-picture);
+  margin-top: calc(var(--base-size) / 2);;
+  width: var(--square-picture);
 }
 
 .name {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   height: 50px;
-  padding: 12px;
+  padding: var(--base-size);
   text-align: center;
-  text-justify: center;
+  justify-content: center;
   width: 300px;
 }
 
@@ -76,5 +82,5 @@ p {
 }
 
 .form button {
-  margin-top: 6px;
+  margin-top: calc(var(--base-size) / 2);
 }
