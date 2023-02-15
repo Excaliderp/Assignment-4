@@ -46,7 +46,7 @@ h1 {
 
 a,
 h3 {
-  color: #FFDE00;
+  color: #FFDE00; /* Use  --secondary-color and combine these two with the h1 styling */
 }
 
 p {

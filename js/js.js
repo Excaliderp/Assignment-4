@@ -1,5 +1,5 @@
 $(function () {
-
+// Remove the empty lines
 
   const API_URL = "https://pokeapi.co/api/v2/pokemon/"
 
@@ -28,7 +28,7 @@ $(function () {
       });
   });
 
-
+// Detsamma
 
   $(".random-button").click(function () {
     $(".error-message").empty();
@@ -45,7 +45,7 @@ $(function () {
         $(".default").attr("src", data.sprites.front_default);
 
       });
-
+// igen!
   })
 
 });
